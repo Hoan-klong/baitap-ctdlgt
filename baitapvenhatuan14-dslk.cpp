@@ -4,7 +4,7 @@
 using namespace std;
 
 const int n = 11;
-
+//thanhpho
 string city[n + 1] = {
     "",
     "Ha Noi",
@@ -57,6 +57,7 @@ void BFS(int start)
 
 int main()
 {
+    // dsthanhpho
     addEdge(1,2);
     addEdge(1,3);
     addEdge(1,7);
