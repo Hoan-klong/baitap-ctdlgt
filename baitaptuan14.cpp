@@ -74,13 +74,13 @@ Node* insertAVL(Node* root, int x) {
     if (balance < -1 && x > root->right->data)
         return rotateLeft(root);
 
-    // Left Right
+    
     if (balance > 1 && x > root->left->data) {
         root->left = rotateLeft(root->left);
         return rotateRight(root);
     }
 
-    // Right Left
+ 
     if (balance < -1 && x < root->right->data) {
         root->right = rotateRight(root->right);
         return rotateLeft(root);
@@ -123,13 +123,13 @@ int main() {
         root = insertAVL(root, a[i]);
     }
 
-    cout << "Duyet giua LNR tang dan: ";
+    cout << " giua LNR tang dan: ";
     inorder(root);
 
-    cout << "\nDuyet truoc NLR: ";
+    cout << "\n truoc NLR: ";
     preorder(root);
 
-    cout << "\nDuyet sau LRN: ";
+    cout << "\n sau LRN: ";
     postorder(root);
 
     cout << endl;
