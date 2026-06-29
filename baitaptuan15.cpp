@@ -65,7 +65,7 @@ void printDFSPath(int start, int target)
 
     reverse(path.begin(), path.end());
 
-    cout << "\nDUONG DI TIM DUOC (DFS):\n";
+    cout << "\n(DFS):\n";
 
     for (size_t i = 0; i < path.size(); i++)
     {
@@ -124,7 +124,7 @@ void BFSShortestPath(int start, int target)
 
     reverse(path.begin(), path.end());
 
-    cout << "\nDUONG DI NGAN NHAT (BFS):\n";
+    cout << "\nBFS):\n";
 
     for (size_t i = 0; i < path.size(); i++)
     {
@@ -162,7 +162,7 @@ int main()
 
     addEdge(8,9);
 
-    // Hien thi danh sach thanh pho
+    //ds
 
     cout << "===== DANH SACH THANH PHO =====\n";
 
