@@ -31,20 +31,20 @@ void initGraph()
     for(int i=0;i<N;i++)
         for(int j=0;j<N;j++)
             a[i][j]=0;
-
-    a[0][6]=a[6][0]=1;   // Ha Noi - Hai Duong
-    a[6][7]=a[7][6]=2;   // Hai Duong - Hung Yen
-    a[7][8]=a[8][7]=3;   // Hung Yen - Phu Ly
-    a[8][0]=a[0][8]=4;   // Phu Ly - Ha Noi
-    a[9][0]=a[0][9]=5;   // Hoa Binh - Ha Noi
-    a[10][0]=a[0][10]=6; // Son Tay - Ha Noi
-    a[1][0]=a[0][1]=7;   // Thai Nguyen - Ha Noi
-    a[2][0]=a[0][2]=8;   // Bac Ninh - Ha Noi
-    a[2][3]=a[3][2]=9;   // Bac Ninh - Bac Giang
-    a[3][4]=a[4][3]=10;  // Bac Giang - Uong Bi
-    a[2][4]=a[4][2]=11;  // Bac Ninh - Uong Bi
-    a[4][5]=a[5][4]=12;  // Uong Bi - Hai Phong
-    a[6][5]=a[5][6]=13;  // Hai Duong - Hai Phong
+//thành phố 
+    a[0][6]=a[6][0]=1;   
+    a[6][7]=a[7][6]=2;   
+    a[7][8]=a[8][7]=3;   
+    a[8][0]=a[0][8]=4;   
+    a[9][0]=a[0][9]=5;   
+    a[10][0]=a[0][10]=6; 
+    a[1][0]=a[0][1]=7;   
+    a[2][0]=a[0][2]=8;   
+    a[2][3]=a[3][2]=9;   
+    a[3][4]=a[4][3]=10;  
+    a[2][4]=a[4][2]=11;  
+    a[4][5]=a[5][4]=12;  
+    a[6][5]=a[5][6]=13;  
 }
 
 void printCities()
