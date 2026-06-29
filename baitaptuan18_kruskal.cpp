@@ -23,7 +23,7 @@ string city[N] = {
 
 struct Edge
 {
-    int u;
+    int us;
     int v;
     int w;
 };
@@ -85,15 +85,15 @@ void Kruskal()
 
     for(int i=0;i<13 && cnt<N-1;i++)
     {
-        int u=edge[i].u;
+        int us=edge[i].us;
         int v=edge[i].v;
 
         if(Find(u)!=Find(v))
         {
             Union(u,v);
 
-            mst[u][v]=edge[i].w;
-            mst[v][u]=edge[i].w;
+            mst[us][v]=edge[i].w;
+            mst[v][us]=edge[i].w;
 
             cout<<city[u]
                 <<" - "
@@ -140,4 +140,4 @@ int main()
     printMatrix();
 
     return 0;
-}
+} 
