@@ -3,7 +3,7 @@
 using namespace std;
 
 const int n = 11;
-
+//ten
 string city[n + 1] = {
     "",
     "Ha Noi",
@@ -26,7 +26,7 @@ void addEdge(int u, int v)
     A[u][v] = 1;
     A[v][u] = 1;
 }
-
+//duongd đi
 void BFS(int start)
 {
     bool visited[n + 1] = {false};
